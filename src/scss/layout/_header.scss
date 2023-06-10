@@ -1,0 +1,40 @@
+.header {
+  background-color: $orange;
+  min-height: 15vh;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    &--title {
+      font-size: 1.6rem;
+    }
+  }
+  &__nav {
+    background-color: $red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    @media (min-width: 1024px) {
+      width: 40%;
+    }
+    &--link {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        transform: scale(150%);
+        background-color: white;
+        color: $red;
+        padding: 0.15rem;
+      }
+    }
+  }
+}

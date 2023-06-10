@@ -1,0 +1,12 @@
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/sections";
+@import "layout/footer";
+
+html {
+  font-family: $roboto;
+  @media (min-width: 1024px) {
+    background-color: $ligthgray;
+  }
+}
